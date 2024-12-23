@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Poppins", serif;
+    font-style: normal;
+    font-weight: 400;
+    
+}
+@keyframes  slide{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1737.33px);
+    }
+}
+
+html::-webkit-scrollbar{
+    width: 7px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: #a8a8a8;
+    border-radius: 5px;
+}
+
+header {
+    background-color: #0f0f0f;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 13px 64px;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+}
+
+header .container {
+    width: 1310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container .logo-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+}
+
+header .container .logo-nav .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header .container .logo-nav ul {
+    display: flex;
+    gap: 3px;
+    list-style: none;
+}
+
+header .container .logo-nav ul a {
+    padding: 7px 8px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 0.7px;
+}
+
+header .container .logo-nav ul a:hover {
+    background-color: #313131;
+}
+
+header .container .logo-nav ul a i {
+    margin-left: 4px;
+
+}
+
+header .container .logo img {
+    width: 124px;
+}
+
+header .container .start-login {
+    display: flex;
+    align-items: center;
+}
+header .container .start-login button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #EDEDED;
+    font-size: 25px;
+    display: none;
+}
+
+header .container .start-login ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+header .container .start-login ul li {
+    padding: 13px 0px;
+
+}
+
+header .container .start-login ul a {
+    padding: 13px 19px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+
+}
+
+header .container .start-login ul .getstart {
+    background-color: #2e6edf;
+    transition: 0.4s;
+}
+
+header .container .start-login ul .getstart:hover {
+    background-color: #2964c4;
+}
+
+header .container .start-login ul .login {
+    transition: 1.2s ease;
+}
+
+header .container .start-login ul .login:hover {
+    background-color: #313131;
+}
+.section-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    background: #EDEDED;
+}
+.section-1 .container{
+    background-image: url(bg-img/bg-img.jpg);
+    width: 1920px;
+    background-size: cover;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 380px 64px 140px;
+}
+.section-1 .container .content{
+    max-width: 1310px;
+    color: #fff;
+}
+.section-1 .container .content .parent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+.section-1 .container .content h1{
+    font-size: 60px;
+    font-weight: 700;
+    width: 45%;
+}
+.section-1 .container .content p{
+    font-size: 20px;
+    width: 60%;
+    
+}
+.section-1 .container .content a{
+    padding: 16px 24px;
+    color: #000000;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px blue;
+    width: max-content;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.section-1 .container .svg-slide img{
+    height: 40px;
+    padding-right: 80px;
+}
+.section-1 .container .svg-slide{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0px 64px;
+}
+.section-1 .container .svg-slide .sl{
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    max-width: 1312px;
+}
+.section-1 .container .svg-slide .slide-overflow{
+    display: flex;
+    animation: slide 50s infinite linear;
+}
+.section-2{
+    width: 100%;
+    background: #EDEDED;
+    display: flex;
+    justify-content: center;
+}
+.section-2 .container{
+    width: 100%;
+    max-width: 1920px;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-2 .container .content{
+    padding: 40px 64px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+.section-2 .container .content p{
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    font-size: 20px;
+    color: #00000080;
+    padding-bottom: 30px;
+
+}
+.section-2 .container .content strong{
+    font-weight: 900;
+    color: #000000;
+}
+.section-2 .container  .banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 116px;
+    width: 100%;
+}
+.section-2 .container  .banner .bn-heading{
+    padding: 0px 0px 76px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section-2 .container  .banner .bn-heading h1{
+    font-size: 56px;
+    font-weight: 600;
+    padding-bottom: 40px;
+    width: 100%;
+    max-width:600px;
+}
+.section-2 .container  .banner .bn-heading p{
+    font-size: 20px;
+    color: #666666;
+    width: 100%;
+    max-width: 900px;
+}
+.section-2 .container .banner .bn-body{
+    display: flex;
+    justify-content: center;
+    gap: 140px;
+    max-width: 1086px;  
+    align-items: center;
+    width: 100%;
+}
+.section-2 .container  .banner .bn-body .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 110px 0px;
+}
+.section-2 .container  .banner .bn-body .description h2{
+    font-size: 80px;
+    color: #212121;
+}
+.section-2 .container  .banner .bn-body .description span{
+    color: #666666;
+    font-size: 20px;
+}
+.section-2 .container .banner .bn-body .photo-cont{
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.section-2 .container .banner .bn-body .photo-cont img{
+    width: 100%;
+}
+.section-2 .container .banner .partners{
+    display: flex;
+    align-items: center;
+    margin-top: 190px;
+    gap: 80px;
+    width: 100%;
+    max-width: max-content;
+}
+.section-2 .container .banner .partners .partners-svg{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 25px;
+    width: 100%;
+
+}
+.section-2 .container .banner .partners h1{
+    font-size: 56px;
+    width: 100%;
+    max-width: 486px;
+    color: #0f0f0f;
+}
+.section-2 .container .banner .partners .partners-svg div{
+    background-color: #EDEDED;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-2 .container .banner .build-any-deployed{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+.section-2 .container .banner .build-any-deployed h1{
+    font-size: 56px;
+    width: 640px;
+    color: #0f0f0f;
+}
+.section-2 .container .banner .build-any-deployed p{
+    color: #535353;
+    font-size: 20px;
+    width: 640px;
+
+}
+.section-2 .container .banner .build-body{
+    width: 100%;
+    max-width: max-content;
+}
+.section-2 .container .banner .highest-quality{
+    width: 100%;
+    max-width: max-content;
+    display: grid;
+    grid-template-columns: 438px 1fr;
+    grid-gap: 2rem;
+}
+.section-2 .container .banner .highest-quality  .case-study{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    background-color: red;
+}
+.section-2 .container .banner .highest-quality  .case-study img{
+    grid-area: 1/1/1/3;
+}
+@media (max-width: 1024px){
+    header{
+        padding: 13px 35px;
+    }
+    header .container .logo-nav ul{
+        display: none;
+    }
+    header .container .start-login ul{
+        display: none;
+    }
+    header .container .start-login button{
+        height: 55px;
+        display: inline;
+    }
+    
+    .section-2 .container .banner .partners{
+        flex-direction: column;
+    }
+    .section-2 .container .content{
+        padding: 40px 20px 50px;
+    }
+    .section-2 .container .content p{
+        font-size: 18px;
+    }
+    .section-2 .container .banner .bn-body{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .section-2 .container .banner .bn-body .description{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: max-content;
+        padding: 15px;
+    }
+   
+    .section-2 .container .banner .bn-body .description h2{
+        text-align: start;
+        font-size: 36px;
+    }
+    .section-2 .container .banner .bn-body .description span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        text-align: start;
+    }
+    .section-2 .container  .banner{
+        padding: 0px 15px;
+    }
+    .section-2 .container  .banner .bn-heading h1{
+
+        font-size: 30px;
+    }
+    .section-2 .container  .banner .bn-heading p{
+        font-size: 18px;
+    }
+    .section-2 .container .banner .partners{
+        flex-direction: row;
+        margin-top: 35px;
+    }
+    
+    
+    .section-2 .container .banner .partners h1{
+        font-size: 30px;
+    }
+    .section-2 .container .banner .partners .svg-slide{
+        width: 60%;
+    }
+    .section-2 .container .banner .bn-body .photo-cont{
+        justify-content: start;
+        padding: 0px 35px;
+        width: 100%;
+    }
+    .section-1 .container{
+        padding: 40vh 15px 140px ;
+        padding-right: 30%;
+    }
+    .section-1 .container .content h1{
+        width: 100%;
+        font-size: 40px;
+    }
+    .section-1 .container .content p{
+        font-size: 18px;
+        width: 100%;
+    }
+    .section-1 .container .content a{
+        text-align: center;
+        width: 100%;
+    }
+    .section-1 .container .svg-slide{
+        padding: 0px 20px;
+    }
+}
+@media (max-width: 770px){
+    header{
+        padding: 13px 25px;
+    }
+    header .container .logo-nav ul{
+        display: none;
+    }
+    header .container .start-login ul{
+        display: none;
+    }
+    header .container .start-login button{
+        height: 55px;
+        display: inline;
+    }
+    
+    .section-2 .container .banner .partners{
+        flex-direction: column;
+    }
+    .section-2 .container .content{
+        padding: 40px 20px 50px;
+    }
+    .section-2 .container .content p{
+        font-size: 14px;
+    }
+    .section-2 .container .banner .bn-body{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .section-2 .container .banner .bn-body .description{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);  
+        grid-template-rows: max-content;
+        padding: 15px;
+    }
+   
+    .section-2 .container .banner .bn-body .description h2{
+        text-align: start;
+        font-size: 36px;
+    }
+    .section-2 .container .banner .bn-body .description span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        text-align: start;
+    }
+    .section-2 .container  .banner{
+        padding: 0px 15px;
+    }
+    .section-2 .container  .banner .bn-heading h1{
+
+        font-size: 26px;
+    }
+    .section-2 .container .banner .partners{
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    
+    
+    .section-2 .container .banner .partners h1{
+        font-size: 30px;
+    }
+   /* .section-2 .container .banner .bn-body .photo-cont{
+        max-width: 200px;
+    } */ 
+    .section-1 .container{
+        padding: 40vh 15px 140px;
+    }
+    .section-1 .container .content h1{
+        width: 100%;
+        font-size: 30px;
+    }
+    .section-1 .container .content p{
+        font-size: 14px;
+        width: 100%;
+    }
+    .section-1 .container .content a{
+        text-align: center;
+        width: 100%;
+    }
+    .section-1 .container .svg-slide{
+        padding: 0px 20px;
+    }
+}
